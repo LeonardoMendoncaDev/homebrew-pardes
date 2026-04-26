@@ -5,21 +5,21 @@
 class PardesCli < Formula
   desc "PARDES CLI — método PARDES como coreógrafo do teu agente de IA."
   homepage "https://www.pardes.pro"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/LeonardoMendoncaDev/pardes-cli/releases/download/v0.0.1/pardes-cli_0.0.1_darwin_amd64.tar.gz"
-      sha256 "2621a163ebff8d9082bda2200a7a870e9ce8a43c9d39b2b52ae804175c62bc91"
+      url "https://github.com/LeonardoMendoncaDev/pardes-cli/releases/download/v0.0.2/pardes-cli_0.0.2_darwin_amd64.tar.gz"
+      sha256 "debd292881c60199c7b8c31f8a36e4b3452bf377b5eb6373ca0adac8050444ea"
 
       define_method(:install) do
         bin.install "pardes"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/LeonardoMendoncaDev/pardes-cli/releases/download/v0.0.1/pardes-cli_0.0.1_darwin_arm64.tar.gz"
-      sha256 "524e3f983ff23c5d69aadaa7d5c0a44b35e688b7498f0865257ab5e78c1ff7ab"
+      url "https://github.com/LeonardoMendoncaDev/pardes-cli/releases/download/v0.0.2/pardes-cli_0.0.2_darwin_arm64.tar.gz"
+      sha256 "93ae73cb210c08d684c8ce2ef9728464bf629c07eab86d057cd7af9ecd9576d8"
 
       define_method(:install) do
         bin.install "pardes"
@@ -29,15 +29,15 @@ class PardesCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/LeonardoMendoncaDev/pardes-cli/releases/download/v0.0.1/pardes-cli_0.0.1_linux_amd64.tar.gz"
-      sha256 "6711e4dc02b47cda46b35fc159bd710e750125b3bd3492d0a9e2ddfe25ce3ed2"
+      url "https://github.com/LeonardoMendoncaDev/pardes-cli/releases/download/v0.0.2/pardes-cli_0.0.2_linux_amd64.tar.gz"
+      sha256 "471791de726078079eaf7f460beb08d740808e1195cb2b85a0d030878f84b6c0"
       define_method(:install) do
         bin.install "pardes"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/LeonardoMendoncaDev/pardes-cli/releases/download/v0.0.1/pardes-cli_0.0.1_linux_arm64.tar.gz"
-      sha256 "8b4044507a53987fc9adc504e50372dad53bed0013d3227d7646f75b382838ba"
+      url "https://github.com/LeonardoMendoncaDev/pardes-cli/releases/download/v0.0.2/pardes-cli_0.0.2_linux_arm64.tar.gz"
+      sha256 "504917b837dfcaedee80bc3cc29f2f788d46b0131ecaae15c25a21584c998e8b"
       define_method(:install) do
         bin.install "pardes"
       end
