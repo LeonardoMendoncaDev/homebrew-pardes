@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# IDEs
+.idea/
+.vscode/
+
+# Editor swap/backup files
+*.swp
+*.swo
+*~
